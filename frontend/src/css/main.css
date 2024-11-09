@@ -1,0 +1,61 @@
+@import 'tailwind/_base.css';
+@import 'tailwind/_components.css';
+@import 'tailwind/_utilities.css';
+@import 'intro.js/introjs.css';
+@import '_checkbox-radio-switch.css';
+@import '_progress.css';
+@import '_scrollbars.css';
+@import '_table.css';
+@import '_helper.css';
+@import '_calendar.css';
+@import '_select-dropdown.css';
+@import '_theme.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  @apply font-sans text-primaryText !important;
+}
+.MuiList-root,
+.MuiListItemIcon-root {
+  @apply text-neonGreenTheme-buttonColor  bg-gray-600  !important;
+}
+.MuiCheckbox-colorPrimary {
+  @apply text-neonGreenTheme-buttonColor !important;
+}
+.MuiDataGrid-row.Mui-selected {
+  @apply bg-neonGreenTheme-mainBG !important;
+}
+.MuiDataGrid-withBorderColor {
+  @apply border-neonGreenTheme-mainBG !important;
+}
+.MuiDataGrid-cell:focus {
+  @apply outline-neonGreenTheme-buttonColor !important;
+}
+
+.introjs-tooltip {
+  @apply min-w-[400px] max-w-[480px] p-2 !important;
+}
+
+.introjs-tooltipReferenceLayer * {
+  @apply font-sans text-base text-gray-900;
+
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.good-img {
+  @apply -mt-96 !important;
+}
+.end-img {
+  @apply -mt-72 !important;
+}
+.introjs-button {
+  @apply bg-neonGreenTheme-buttonColor text-black  !important;
+  text-shadow: none !important;
+}
+.introjs-bullets ul li a.active {
+  @apply bg-neonGreenTheme-iconsColor  !important;
+}
+.introjs-prevbutton {
+  @apply bg-transparent border border-neonGreenTheme-buttonColor text-neonGreenTheme-buttonColor !important;
+}
